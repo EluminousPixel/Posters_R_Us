@@ -13,8 +13,11 @@ Number of copies required:
 - There is a minimum order quantity of 10 copies (size * 3p) per poster for the first 10 copies (size * 75p) per poster for all further copies.
 
 Choice of paper:
+
 (115gm – no extra charge) 
+
 (135gm – extra 5p per poster) 
+
 (PVC – extra 35p per poster)
 
 Inputs: 
