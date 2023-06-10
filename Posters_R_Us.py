@@ -5,19 +5,6 @@ def result_2():
     print("\nFirst Name - " + f_n + "\nSurname - " + s_n + "\nEmail - " + email + 
     "\nPhone Number - " + str(p_n) + "\nTotal Cost Of Posters - £" + "%.2f" % amnt_1)
 
-def posters():
-    f_n = input("First Name: ")
-    if f_n != int:
-        s_n = input("Surname: ")
-    if s_n != int:
-        email = input("Email: ")
-    if email != int:
-        p_n = int(input("Phone Number: "))
-    if p_n != str:
-        post_amnt()
-    else:
-        print("Validation Error 0x34758")
-        post_amnt()
 
 def post_amnt():
     global amnt_1
@@ -84,29 +71,14 @@ def posters():
     global p_n
     try:
         f_n = input("First Name: ")
-        try:
-            s_n = input("Surname: ")
-            try:
-                email = input("Email: ")
-                try:
-                    p_n = int(input("Phone Number: "))
-                
-                except:
-                    print("Validation Error 0x34758")
-                    posters()
-            
-            except:
-                print("Validation Error 0x34758")
-                posters()        
-        
-        except:
-            print("Validation Error 0x34758")
-            posters()   
+        s_n = input("Surname: ")
+        email = input("Email: ")
+        p_n = int(input("Phone Number: "))
     
     except:
         print("Validation Error 0x34758")
         posters()
-    
+
     else:
         post_amnt()
 
