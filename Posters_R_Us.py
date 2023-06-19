@@ -25,7 +25,7 @@ def post_amnt():
             if poster > 10:
                 amnt_1 = 10 * (size * 0.03)
                 poster -= 10
-                amnt_2 = poster * (size * 0.75)
+                amnt_2 = poster * (size * 0.0075)
                 amnt_3 = amnt_1 + amnt_2
                 p_type = input("""What paper type:
 115gm - no extra charge
@@ -35,11 +35,13 @@ PVC - extra 35p per poster\n""")
                     result_1()
                 
                 elif p_type == "135gm":
-                    amnt_3 += 0.05
+                    poster = 0.05 * (poster + 10)
+                    poster += amnt_3
                     result_1()
                 
                 elif p_type == "PVC":
-                    amnt_3 += 0.35
+                    poster = 0.35 * (poster + 10)
+                    poster += amnt_3
                     result_1()
 
             elif poster == 10:
@@ -52,11 +54,13 @@ PVC - extra 35p per poster\n""")
                     result_2()
                 
                 elif p_type == "135gm":
-                    amnt_1 += 0.05
+                    amnt_2 = (poster * 0.05)
+                    amnt_3 = amnt_1 + amnt_2
                     result_2()
                 
                 elif p_type == "PVC":
-                    amnt_1 += 0.35
+                    amnt_2 = (poster * 0.35)
+                    amnt_3 = amnt_1 + amnt_2
                     result_2()     
                 
             else:
